@@ -8,7 +8,10 @@ const Quiz = ({questions}) => {
         <div className='bg-pink-100 mt-10 ml-40 mr-40 p-10 rounded-md'>
             
     <div className='mt-5 mb-10 text-xl flex justify-between'>
-    <p> {question}</p>
+    
+    {
+        question.slice(3, -4)
+    }
     <EyeIcon className="h-8 w-8 text-dark"/>
     </div>
             <div className='text-lg grid grid-cols-2'>
