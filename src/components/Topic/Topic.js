@@ -5,7 +5,7 @@ const Topic = ({ topic }) => {
   const {id, name, logo, total } = topic;
   return (
     <div className=" grid lg:grid-cols-4 md: grid-cols-2 sm: grid-cols-1">
-      <div className='bg-gray-200 m-5 rounded-lg w-50' >
+      <div className='bg-black m-5 rounded-lg w-50' >
         <div className="">
           <img className="w-full" src={logo}></img>
         </div>
