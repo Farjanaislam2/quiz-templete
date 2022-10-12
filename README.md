@@ -1,11 +1,11 @@
 #Project name: Quiz Templete
 
-live link:http://localhost:3000/
+live link:https://cosmic-torrone-d886af.netlify.app/
 
 
-#Use heroIcon, favIcon. 
-#Framework: Tailwind.
-#sweetAlert, Radio Button.
+1.Use heroIcon, favIcon. 
+2.Framework: Tailwind.
+3.sweetAlert, Radio Button.
 
--Netlify link: 
+ 
 
