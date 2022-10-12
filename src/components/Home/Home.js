@@ -15,13 +15,12 @@ const Home = () => {
         <div className="flex mr-10">
           <BookOpenIcon className="h-36 w-36 text-pink-500 align-middle justify-center" />
           <h1 className="justify-center align-middle mt-10 ml-5">
-            {" "}
             Test your knowledge with programming language quiz questions.
           </h1>
         </div>
       </div>
 
-      <div className="grid lg:grid-cols-4 sm:grid-cols-1">
+      <div className="grid lg:grid-cols-4  md:grid-cols-2 sm:grid-cols-1 ml-5 mb-6">
         {topics.map((topic) => (
           <Topic key={topic.id} topic={topic}></Topic>
         ))}
