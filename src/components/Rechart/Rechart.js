@@ -1,9 +1,14 @@
 import React from 'react';
+import { Tooltip, PieChart, Pie } from 'recharts';
 
-const Rechart = ({chart}) => {
+
+const Rechart = (charts) => {
+    console.log(charts)
+    
     return (
         <div>
-            <h3>my chart:{chart.total}</h3>
+           
+            
         </div>
     );
 };
