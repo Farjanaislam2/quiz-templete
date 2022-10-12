@@ -3,16 +3,19 @@ import { EyeIcon } from '@heroicons/react/24/solid'
 
 const Quiz = ({questions}) => {
     const {correctAnswer,question, options} = questions;
+
   const handleRadioBtn = (option) =>{
     if(option === correctAnswer){
-        console.log('right')
+        alert('right answer')
     }
     else{
-        <div className='toast alert alert-info'>
-            <span>Wrong Answer</span>
-        </div>
+        alert('wrong answer')
     
     }
+  }
+
+  const handleCorrectAnswer =(correctAnswer) =>{
+alert(correctAnswer)
   }
     return (
         <div className='bg-pink-100 mt-10 ml-40 mr-40 p-10 rounded-md'>
@@ -23,13 +26,13 @@ const Quiz = ({questions}) => {
         question.slice(3, -4)
     }
     
-    <EyeIcon className="h-8 w-8 text-dark"/>
+    <EyeIcon onClick={()=> handleCorrectAnswer(correctAnswer)} className="h-8 w-8 text-dark"/>
     </div>
             <div className='text-lg grid grid-cols-2'>
          {
             options.map(option => <label  className='flex'>
             <input className='' type="radio" name={'...id'} id="" />
-            <span onClick={() =>handleRadioBtn(option)} className='grid grid-cols-2 ml-5 justify-center align-middle'>{option}</span>
+            <span onClick={()=>handleRadioBtn(option)} className='grid grid-cols-2 ml-5 justify-center align-middle'>{options}</span>
           </label>)
           
          }
